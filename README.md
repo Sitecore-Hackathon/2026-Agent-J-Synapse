@@ -5,6 +5,3 @@
 - [Entry form template](ENTRYFORM.md)
   
 ### ⟹ [Insert your documentation here](ENTRYFORM.md) <<
-
-## TODO: DELETE TEST UPDATE
-- Test push to repo
