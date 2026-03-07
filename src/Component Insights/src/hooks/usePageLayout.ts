@@ -249,11 +249,6 @@ export function usePageLayout(client: any): UsePageLayoutReturn {
 
         let matchesFilter = true;
         switch (activeFilter) {
-          case "broken":
-            matchesFilter =
-              comp.isDatasourceMissing ||
-              Object.keys(comp.fields).length === 0;
-            break;
           case "missing-datasource":
             matchesFilter = comp.isDatasourceMissing;
             break;
