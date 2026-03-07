@@ -1,0 +1,22 @@
+{
+  "name": "Component Inspector",
+  "description": "X-ray vision into page component architecture — datasources, rendering parameters, blast radius warnings, and more.",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "extensions": [
+    {
+      "type": "pages-contextpanel-extension",
+      "name": "Component Inspector",
+      "description": "Accordion view of all components on the current page",
+      "path": "/pages-contextpanel-extension",
+      "icon": "search"
+    },
+    {
+      "type": "fullscreen-extension",
+      "name": "Component Inspector - Fullscreen",
+      "description": "Full data-grid explorer with content tree and CSV export",
+      "path": "/fullscreen-extension",
+      "icon": "maximize"
+    }
+  ]
+}

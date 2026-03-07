@@ -1,53 +1,33 @@
-![Hackathon Logo](docs/images/hackathon.png?raw=true "Hackathon Logo")
-# Sitecore Hackathon 2026
-
+# Hackathon Submission Entry form
 
 ## Team name
-⟹ Agent-J-Synapse
-1. **Jaya Jha**
-2. **Jeel Maheshwari**
-
-![Agent-J-Synapse](docs/images/Agent%20J-Synapse.png?raw=true "Agent-J-Synapse") 
+⟹ [Your Team Name Here]
 
 ## Category
-⟹ [Best Marketplace App for Sitecore AI]
+⟹ [Your Selected Category]
 
 ## Description
-⟹ The Component Insights is a powerful SitecoreAI Marketplace extension that provides comprehensive visibility into page components, their properties, usage, and relationships within SitecoreAI Pages. It helps content editors and developers understand component structure, datasource dependencies, and impact analysis in real-time.
+⟹ The Component Inspector is a powerful Sitecore Marketplace extension that provides comprehensive visibility into page components, their properties, usage, and relationships within XM Cloud Pages. It helps content editors and developers understand component structure, datasource dependencies, and impact analysis in real-time.
 
-### Component Insights Features
-The Component Insights serves as a comprehensive tool for content editors and developers working with SitecoreAI Pages. It provides:
-
-- **Page Properties Display**: Shows comprehensive page metadata including item lock status
-![Page Properties Display](docs/images/Page%20Properties%20Display.png?raw=true "Page Properties Display")
+### Module Purpose
+The Component Inspector serves as a comprehensive tool for content editors and developers working with Sitecore XM Cloud Pages. It provides:
 
 - **Real-time Component Discovery**: Automatically detects and lists all components on the current page
-![Component Discovery](docs/images/Component%20Discovery.png?raw=true "Component Discovery")
-![Component Details](docs/images/Component%20Details.png?raw=true "Component Details")
-
 - **Component Usage Tracking**: Shows how many pages use a specific component/rendering
-![Component Usage Tracking](docs/images/Component%20Discovery.png?raw=true "Component Usage Tracking")
-![Component Usage Links](docs/images/Component%20Discovery.png?raw=true "Component Usage Links")
-
 - **Datasource Usage Tracking**: Identifies shared datasources and their usage across pages
-![Datasource Usage Tracking](docs/images/Datasource%20Usage%20Tracking.png?raw=true "Datasource Usage Tracking")
-![Datasource Usage Links](docs/images/Datasource%20Usage%20Links.png.png?raw=true "Datasource Usage Links")
-
 - **Impact Analysis**: Alerts when datasources are shared across multiple pages with detailed usage information
-![Impact Analysis](docs/images/Impact%20Analysis.png?raw=true "Impact Analysis")
-
+- **Page Properties Display**: Shows comprehensive page metadata including lock status
+- **Dynamic Placeholder Resolution**: Intelligently resolves dynamic placeholders (e.g., `container-{*}` → `container-2`)
 - **Search & Filter**: Powerful search and filtering capabilities for components
-![Search & Filter](docs/images/Search-and-Filter.png?raw=true "Search & Filter")
-![Search ](docs/images/Search.png?raw=true "Search ")
 
 ### What problem was solved
 
-**Problem**: Content editors and developers working with SitecoreAI Pages often struggle with:
-- Understanding page metadata and lock status
+**Problem**: Content editors and developers working with Sitecore XM Cloud Pages often struggle with:
 - Understanding which components are used on a page
 - Identifying shared datasources and their impact across multiple pages
 - Tracking component usage across the site
-- Reducing the multiple clicks efforts to get page, components and it's usage details
+- Resolving dynamic placeholder paths
+- Understanding page metadata and lock status
 
 **How does this module solve it**:
 
@@ -57,9 +37,11 @@ The Component Insights serves as a comprehensive tool for content editors and de
 
 3. **Impact Warnings**: When a datasource is shared across multiple pages, the extension displays a warning with detailed information about all pages using that datasource, including workflow status and field references.
 
-4. **Direct Content Editor Links**: Provides clickable links to open items directly in the Sitecore Content Editor, improving workflow efficiency.
+4. **Dynamic Placeholder Resolution**: Automatically resolves dynamic placeholder keys using parent component parameters, making it easy to understand component hierarchy.
 
-5. **Real-time Updates**: Subscribes to page context changes and layout updates, ensuring the component list stays synchronized with the current page state.
+5. **Direct Content Editor Links**: Provides clickable links to open items directly in the Sitecore Content Editor, improving workflow efficiency.
+
+6. **Real-time Updates**: Subscribes to page context changes and layout updates, ensuring the component list stays synchronized with the current page state.
 
 For more detailed information, see [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md).
 
@@ -68,64 +50,29 @@ For more detailed information, see [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md).
 
 ## Pre-requisites and Dependencies
 
-The Component Insights requires:
+The Component Inspector requires:
 
+- **Sitecore XM Cloud** environment with Pages application
 - **Node.js 18+** and npm/yarn package manager
-- **SitecoreAI Marketplace SDK** packages (automatically installed via npm):
+- **Sitecore Marketplace SDK** packages (automatically installed via npm):
   - `@sitecore-marketplace-sdk/client` (latest)
   - `@sitecore-marketplace-sdk/xmc` (latest)
-- **OAuth Credentials** for SitecoreAI Cloud API access:
+- **OAuth Credentials** for Sitecore Cloud API access:
   - Client ID
   - Client Secret
   - These are used for Horizon API and Authoring API authentication
 
-### SitecoreAI Configuration
-- The extension must be installed and configured in the SitecoreAI Marketplace
+### Sitecore Configuration
+- The extension must be installed and configured in the Sitecore Marketplace
 - Extension point: `pages-contextpanel-extension` (main extension)
+- Optional: `fullscreen-extension` for full-screen component analysis
 
-1. In the Sitecore Portal, navigate to **App studio** and create a new **Custom App**.
-
-   ![Create Custom App](docs/images/1_custom%20marketplace%20app.png?raw=true "Create Custom App")
-
-2. Configure the following **Extension points** for the app. 
-  - Activate the Page context panel extension.
-  - Set the Route URL to "/pages-contextpanel-extension"
-
-   ![Extension points](docs/images/2_extension%20points.png?raw=true "Extension points")
-
-3. Configure the following **API Access** for the app.
-
-   ![API Access](docs/images/3_API%20access.png?raw=true "API Access")
-
-4. Set the required **Permissions**.
-
-   ![Permissions](docs/images/4_set%20permission.png?raw=true "Permissions")
-
-5. Enter the **App URL** and upload an icon/image.
-
-   > **Tip:** You can use our hosted demo on Vercel directly — set the App URL to `https://2026-Agent-J-Synapse.vercel.app/` and skip the local setup section below.
-
-   ![App URL & Image](docs/images/5_deployment%20url-app%20logo.png?raw=true "App URL & Image")
-
-6. click on **Activate** to activate the app.
-
-   ![Activate](docs/images/6_activate%20app.png?raw=true "Activate")
-
-7. Go to **My Apps** to verify the app is registered.
-
-   ![My Apps](docs/images/7_my%20apps.png?raw=true "My Apps")
-
-8. Click **Install** to add the app to your environment. You can choose multiple tenants
-
-   ![Install](docs/images/8_install%20app.png?raw=true "Install")
-
-
-## Local Setup Installation instructions
+## Installation instructions
 
 ### Step 1: Clone or Download the Project
 ```bash
 git clone [repository-url]
-cd 2026-Agent-J-Synapse/src/Component Insights
+cd marketplace-starter
 ```
 
 ### Step 2: Install Dependencies
@@ -137,7 +84,7 @@ This will install all required dependencies including:
 - Next.js 15.5.2
 - React 19.1.0
 - Chakra UI 2.10.9
-- SitecoreAI Marketplace SDK packages
+- Sitecore Marketplace SDK packages
 
 ### Step 3: Configure Environment Variables
 Create a `.env.local` file in the project root (copy from `.env.example`):
@@ -164,9 +111,9 @@ Deploy the built application to your hosting platform (e.g., Vercel, Netlify, or
 
 **Important**: Ensure that API routes (`/api/auth/proxy-token`, `/api/horizon/query`, `/api/authoring/query`) are deployed as serverless functions if using static export.
 
-### Step 6: Configure in SitecoreAI Marketplace
-1. Navigate to SitecoreAI Marketplace in your XM Cloud environment
-2. Install the Component Insights extension
+### Step 6: Configure in Sitecore Marketplace
+1. Navigate to Sitecore Marketplace in your XM Cloud environment
+2. Install the Component Inspector extension
 3. Configure the extension point: `pages-contextpanel-extension`
 4. Set the extension URL to your deployed application URL
 
@@ -174,7 +121,7 @@ Deploy the built application to your hosting platform (e.g., Vercel, Netlify, or
 
 #### OAuth Credentials
 The extension requires OAuth credentials to access Sitecore's Horizon API and Authoring API. These credentials must be:
-- Obtained from your SitecoreAI Cloud environment
+- Obtained from your Sitecore Cloud environment
 - Stored securely in environment variables (never commit to version control)
 - Configured in `.env.local` for local development
 - Configured in your hosting platform's environment variables for production
@@ -191,11 +138,11 @@ For detailed setup instructions, see [SETUP_CHECKLIST.md](./SETUP_CHECKLIST.md).
 
 ## Usage instructions
 
-### Accessing the Component Insights
+### Accessing the Component Inspector
 
-1. **Open XM Cloud Pages**: Navigate to your SitecoreAI Pages application
+1. **Open XM Cloud Pages**: Navigate to your Sitecore XM Cloud Pages application
 2. **Open a Page**: Open any page in edit mode
-3. **View Context Panel**: The Component Insights appears in the context panel on the right side of the Pages editor
+3. **View Context Panel**: The Component Inspector appears in the context panel on the right side of the Pages editor
 
 ### Main Features
 
@@ -261,6 +208,8 @@ Currently, the extension does not have custom keyboard shortcuts. All interactio
 
 4. **Filter Usage**: Use the "Shared Datasource" filter to identify components that might have broader impact when modified.
 
+5. **Dynamic Placeholders**: The extension automatically resolves dynamic placeholders, making it easier to understand component hierarchy.
+
 ### Troubleshooting
 
 **Issue**: Components not loading
@@ -276,7 +225,7 @@ For detailed troubleshooting, see [SETUP_CHECKLIST.md](./SETUP_CHECKLIST.md#trou
 
 ### Technical Documentation
 
-For developers who want to understand or extend the Component Insights:
+For developers who want to understand or extend the Component Inspector:
 
 - **Architecture Overview**: [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md)
 - **SDK Integration**: [SDK_INTEGRATION.md](./SDK_INTEGRATION.md)
@@ -291,9 +240,11 @@ For developers who want to understand or extend the Component Insights:
 
 2. **Usage Tracking Integration**: Implemented integration with Sitecore's Horizon API to fetch component and datasource usage data, including proper OAuth authentication.
 
-3. **Performance Optimization**: Implemented debouncing, memoization, and batch fetching to ensure smooth performance even with many components.
+3. **Dynamic Placeholder Resolution**: Developed intelligent algorithm to resolve dynamic placeholder keys using parent component parameters.
 
-4. **Error Handling**: Comprehensive error handling with user-friendly messages and graceful fallbacks.
+4. **Performance Optimization**: Implemented debouncing, memoization, and batch fetching to ensure smooth performance even with many components.
+
+5. **Error Handling**: Comprehensive error handling with user-friendly messages and graceful fallbacks.
 
 ### Future Enhancements
 
@@ -318,4 +269,4 @@ For issues, questions, or contributions, please refer to the repository's issue 
 
 ---
 
-**Note**: Screenshots and video will be added to this README in a future update to provide visual documentation of the Component Insights in action.
+**Note**: Screenshots and video will be added to this README in a future update to provide visual documentation of the Component Inspector in action.

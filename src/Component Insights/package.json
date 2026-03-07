@@ -1,0 +1,34 @@
+{
+  "name": "component-inspector-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sitecore-marketplace-sdk/client": "latest",
+    "@sitecore-marketplace-sdk/xmc": "latest",
+    "@sitecore/blok-theme": "^1.1.17",
+    "@chakra-ui/cli": "^2.5.8",
+    "@chakra-ui/react": "^2.10.9",
+    "@chakra-ui/icons": "^2.1.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "framer-motion": "^12.23.12",
+    "@mdi/js": "^7.4.47",
+    "next": "15.5.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5",
+    "eslint": "^8",
+    "eslint-config-next": "^14"
+  }
+}
