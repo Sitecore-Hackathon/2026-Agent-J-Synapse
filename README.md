@@ -30,12 +30,12 @@ The Component Insights serves as a comprehensive tool for content editors and de
 - **Component Usage Tracking**: Shows how many pages use a specific component/rendering
 
 ![Component Usage Tracking](docs/images/Component%20Discovery.png?raw=true "Component Usage Tracking")
-![Component Usage Links](docs/images/Component%20Discovery.png?raw=true "Component Usage Links")
+![Component Usage Links](docs/images/Component%20Usage%20Links.png?raw=true "Component Usage Links")
 
 - **Datasource Usage Tracking**: Identifies shared datasources and their usage across pages
 
 ![Datasource Usage Tracking](docs/images/Datasource%20Usage%20Tracking.png?raw=true "Datasource Usage Tracking")
-![Datasource Usage Links](docs/images/Datasource%20Usage%20Links.png.png?raw=true "Datasource Usage Links")
+![Datasource Usage Links](docs/images/Datasource%20Usage%20Links.png?raw=true "Datasource Usage Links")
 
 - **Impact Analysis**: Alerts when datasources are shared across multiple pages with detailed usage information
 
