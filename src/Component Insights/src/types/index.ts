@@ -84,3 +84,14 @@ export interface TreeNode {
   children?: TreeNode[];
   isPage: boolean;
 }
+
+export interface ExportRow {
+  componentName: string;
+  placeholder: string;
+  datasourcePath: string;
+  sharedCount: number;
+  variant: string;
+  styles: string;
+  parameters: string;
+  status: string;
+}
