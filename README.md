@@ -19,24 +19,30 @@
 The Component Insights serves as a comprehensive tool for content editors and developers working with SitecoreAI Pages. It provides:
 
 - **Page Properties Display**: Shows comprehensive page metadata including item lock status
+
 ![Page Properties Display](docs/images/Page%20Properties%20Display.png?raw=true "Page Properties Display")
 
 - **Real-time Component Discovery**: Automatically detects and lists all components on the current page
+
 ![Component Discovery](docs/images/Component%20Discovery.png?raw=true "Component Discovery")
 ![Component Details](docs/images/Component%20Details.png?raw=true "Component Details")
 
 - **Component Usage Tracking**: Shows how many pages use a specific component/rendering
+
 ![Component Usage Tracking](docs/images/Component%20Discovery.png?raw=true "Component Usage Tracking")
 ![Component Usage Links](docs/images/Component%20Discovery.png?raw=true "Component Usage Links")
 
 - **Datasource Usage Tracking**: Identifies shared datasources and their usage across pages
+
 ![Datasource Usage Tracking](docs/images/Datasource%20Usage%20Tracking.png?raw=true "Datasource Usage Tracking")
 ![Datasource Usage Links](docs/images/Datasource%20Usage%20Links.png.png?raw=true "Datasource Usage Links")
 
 - **Impact Analysis**: Alerts when datasources are shared across multiple pages with detailed usage information
+
 ![Impact Analysis](docs/images/Impact%20Analysis.png?raw=true "Impact Analysis")
 
 - **Search & Filter**: Powerful search and filtering capabilities for components
+
 ![Search & Filter](docs/images/Search-and-Filter.png?raw=true "Search & Filter")
 ![Search ](docs/images/Search.png?raw=true "Search ")
 
@@ -64,7 +70,7 @@ The Component Insights serves as a comprehensive tool for content editors and de
 For more detailed information, see [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md).
 
 ## Video link
-⟹ [Replace this Video link](#video-link)
+⟹ [Demo - Component Insights](https://drive.google.com/file/d/1RKhzxJBDkXAqDUK07JxjYZS6G84nkVNG/view?usp=sharing)
 
 ## Pre-requisites and Dependencies
 
